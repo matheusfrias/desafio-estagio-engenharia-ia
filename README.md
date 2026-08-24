@@ -11,18 +11,29 @@ desafio-estagio-ia/
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
+│
 ├── dados/
 │   ├── dados_nivel_1.json
 │   └── dados_nivel_2.json
+│
 ├── nivel_1/
 │   └── nivel_1.ipynb
+│
 ├── nivel_2/
 │   ├── tools.py
 │   ├── agente.py
 │   └── confronto.py
-├── nivel_3/
-│   └── README.md
+│
 ├── outputs/
+│   ├── diagnostico_qualidade.csv
+│   ├── nivel_1_operacoes_por_canal.csv
+│   ├── nivel_1_operacoes_tratadas.csv
+│   ├── nivel_1_validacao_fracionamento.csv
+│   ├── nivel_1_volume_por_cliente.csv
+│   ├── resumo_deterministico.json
+│   ├── sinalizacoes_nivel_2.csv
+│   ├── top10_clientes_sinalizados.csv
+│
 └── docs/
     ├── DECISOES.md
     └── USO_DE_IA.md
