@@ -43,9 +43,9 @@ desafio-estagio-ia/
 - Registros recebidos: **322**
 - Registros após deduplicação por `id`: **317**
 - Duplicatas exatas removidas: **5**
-- Datas ausentes após limpeza: **6**
+- Datas ausentes após limpeza: **7**
 - Clientes: **30**
-- Ranking dos 10 clientes sinalizados já salvo em `outputs/top10_clientes_sinalizados.csv`.
+- O ranking dos 10 clientes mais sinalizados está disponível em `outputs/top10_clientes_sinalizados.csv`.
 
 ## Como rodar
 
@@ -90,7 +90,7 @@ Abra:
 jupyter notebook nivel_1/nivel_1.ipynb
 ```
 
-O notebook está salvo com todas as células executadas, incluindo as análises estruturadas com LLM.
+O notebook está salvo com as células determinísticas executadas. A análise estruturada com LLM é executada após a configuração da variável `GEMINI_API_KEY`.
 
 ### 5. Nível 2 — lote
 
@@ -125,7 +125,6 @@ O agente pode escolher dinamicamente entre:
 Ele **não chama todas automaticamente**. Primeiro planeja quais evidências são necessárias e somente então executa as ferramentas selecionadas.
 
 
-```
 
 ## Segurança
 
