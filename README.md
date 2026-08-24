@@ -2,8 +2,6 @@
 
 Solução organizada para o desafio de triagem de operações financeiras fictícias com **regras determinísticas em pandas** e **LLM apenas para interpretação/redação**.
 
-> **Status atual deste pacote:** toda a parte determinística dos Níveis 1 e 2 está calculada e os outputs correspondentes já foram gerados. A integração com Gemini está implementada, mas as chamadas externas não foram executadas aqui porque nenhuma chave de API foi fornecida. Não foram inventados tokens, latência ou pareceres.
-
 ## Estrutura
 
 ```text
