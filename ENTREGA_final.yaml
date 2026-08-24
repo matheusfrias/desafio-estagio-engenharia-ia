@@ -1,0 +1,62 @@
+candidato: "Matheus Puzzello Moniz de Frias"
+modelo_usado: "gemini-3.5-flash-lite"
+provedor: "google-ai-studio"
+horas_dedicadas: 4.62
+
+nivel_1:
+  limpeza_dados:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "Deduplicação por id, preservação de data ausente sem imputação e normalização de valores para BRL com a taxa fixa fornecida nos dados."
+
+  regras_pandas:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "Regra 1 de fracionamento e Regra 2 de valor atípico implementadas exclusivamente com pandas; cálculos não foram delegados à LLM."
+
+  validacao_regras:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "Regra 1 validada explicitamente com um caso positivo (CLI-A-1) e um caso semelhante que não atende aos critérios (CLI-A-2)."
+
+  saida_estruturada:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "Parecer validado com Pydantic nos campos nivel_risco, tipologia_suspeita, red_flags e justificativa, incluindo tratamento de resposta malformada, tokens e latência."
+
+  comparacao_prompts:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "Duas versões de prompt foram executadas e comparadas. A segunda versão prioriza maior controle, auditabilidade e menor extrapolação dos fatos, com análise do trade-off de tokens e latência."
+
+nivel_2:
+  regras_em_escala:
+    status: completo
+    onde: "nivel_2/tools.py e outputs/top10_clientes_sinalizados.csv"
+    nota: "O tratamento e as duas regras do Nível 1 foram reaplicados à base maior. O Top 10 foi ordenado por número de sinalizações, com volume total em BRL como critério de desempate."
+
+  ferramentas:
+    status: completo
+    onde: "nivel_2/tools.py"
+    nota: "Foram implementadas as ferramentas historico_cliente(cliente_id), operacoes_do_dia(cliente_id, data) e perfil_canal(cliente_id)."
+
+  agente:
+    status: completo
+    onde: "nivel_2/agente.py"
+    nota: "O agente usa uma etapa de planejamento com LLM para selecionar dinamicamente apenas as ferramentas necessárias ao caso, seguida de investigação e geração de parecer estruturado."
+
+  lote:
+    status: completo
+    onde: "outputs/lote.csv, outputs/lote.jsonl, outputs/metricas_llm.csv e outputs/metricas_llm_resumo.json"
+    nota: "O agente foi executado para os 10 clientes priorizados. Foram salvos os pareceres estruturados e as métricas de tokens, latência e custo estimado por chamada."
+
+  confronto:
+    status: completo
+    onde: "nivel_2/confronto.py, outputs/confronto.csv e outputs/confronto_resumo.csv"
+    nota: "O confronto entre risco determinístico e risco atribuído pelo agente resultou em 9 concordâncias em 10 casos (taxa de 0,90). A única divergência foi CLI-030, em que a regra indicou risco médio e o agente risco baixo, com justificativa registrada para revisão humana."
+
+nivel_3:
+  trilha_escolhida: C
+  status: nao_feito
+  plano: "docs/DECISOES.md#nivel-3"
+  nota: "O Nível 3 não foi implementado. A decisão foi priorizar a qualidade, validação e documentação dos Níveis 1 e 2."
