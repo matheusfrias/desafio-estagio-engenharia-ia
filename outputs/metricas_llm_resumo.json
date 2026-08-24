@@ -1,0 +1,8 @@
+{
+  "chamadas": 20,
+  "tokens_entrada_total": 8964,
+  "tokens_saida_total": 2920,
+  "latencia_total_s": 130.0668,
+  "latencia_media_s": 6.5033,
+  "custo_estimado_usd_total": 0.0
+}
