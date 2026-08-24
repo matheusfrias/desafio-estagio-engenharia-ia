@@ -18,7 +18,7 @@ Eu procurei manter os cálculos fora da LLM. Soma, mediana, contagem e comparaç
 ```text
 desafio-estagio-ia/
 ├── README.md
-├── ENTREGA.yaml
+├── ENTREGA_final.yaml
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
