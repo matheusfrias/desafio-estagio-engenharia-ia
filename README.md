@@ -92,7 +92,7 @@ Abra:
 jupyter notebook nivel_1/nivel_1.ipynb
 ```
 
-As células determinísticas já estão executadas. Para gerar os dois pareceres reais da LLM, configure a chave e execute as células da seção **Parte B — LLM**.
+O notebook está salvo com todas as células executadas, incluindo as análises estruturadas com LLM.
 
 ### 5. Nível 2 — lote
 
@@ -126,28 +126,15 @@ O agente pode escolher dinamicamente entre:
 
 Ele **não chama todas automaticamente**. Primeiro planeja quais evidências são necessárias e somente então executa as ferramentas selecionadas.
 
-## Commits sugeridos
 
-Não faça um único commit no final. Uma sequência segura é:
-
-```text
-chore: cria estrutura inicial do desafio
-feat: adiciona limpeza e normalizacao do nivel 1
-feat: implementa regras deterministicas e validacao
-feat: adiciona analise estruturada com LLM
-feat: aplica regras em escala e gera ranking top 10
-feat: implementa ferramentas e agente de investigacao
-feat: adiciona execucao em lote e metricas
-feat: implementa confronto entre regras e agente
-docs: finaliza README e documentacao de decisoes
 ```
 
 ## Segurança
 
-- `.env` está no `.gitignore`.
-- `.env.example` contém somente nomes de variáveis.
-- Nenhuma chave de API deve ser versionada.
+- Credenciais são carregadas por variáveis de ambiente.
+- O arquivo `.env` está excluído do versionamento por meio do `.gitignore`.
+- `.env.example` documenta apenas os nomes das variáveis necessárias, sem valores sensíveis.
 
-## Observação sobre o Nível 3
+## Nível 3
 
-O Nível 3 foi deliberadamente deixado como **não feito** neste primeiro pacote para priorizar dois níveis sólidos e auditáveis. Há um plano em `nivel_3/README.md` e `docs/DECISOES.md`.
+O Nível 3 é opcional e não foi implementado nesta versão. A priorização dos Níveis 1 e 2 e o plano de evolução estão documentados em `docs/DECISOES.md`.
