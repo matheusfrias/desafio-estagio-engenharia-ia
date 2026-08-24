@@ -1,0 +1,45 @@
+candidato: PREENCHER_SEU_NOME
+modelo_usado: gemini-2.5-flash-lite
+provedor: google-ai-studio
+horas_dedicadas: PREENCHER
+
+nivel_1:
+  limpeza_dados:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+  regras_pandas:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+  validacao_regras:
+    status: completo
+    onde: "nivel_1/nivel_1.ipynb"
+  saida_estruturada:
+    status: parcial
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "schema e tratamento implementados; executar com GEMINI_API_KEY antes da entrega"
+  comparacao_prompts:
+    status: parcial
+    onde: "nivel_1/nivel_1.ipynb"
+    nota: "duas versões implementadas; respostas reais dependem da execução com API"
+
+nivel_2:
+  regras_em_escala:
+    status: completo
+    onde: "nivel_2/tools.py e outputs/top10_clientes_sinalizados.csv"
+  ferramentas:
+    status: completo
+    onde: "nivel_2/tools.py"
+  agente:
+    status: completo
+    onde: "nivel_2/agente.py"
+  lote:
+    status: nao_feito
+    plano: "Configurar GEMINI_API_KEY, rodar python nivel_2/agente.py e commitar outputs/lote.csv, lote.jsonl e metricas."
+  confronto:
+    status: nao_feito
+    plano: "Após o lote, rodar python nivel_2/confronto.py, revisar divergências e commitar outputs."
+
+nivel_3:
+  trilha_escolhida: C
+  status: nao_feito
+  plano: "docs/DECISOES.md#11-nível-3"
