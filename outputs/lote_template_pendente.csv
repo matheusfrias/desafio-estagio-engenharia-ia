@@ -1,0 +1,11 @@
+cliente_id,total_sinalizacoes,alertas_fracionamento,alertas_valor_atipico,volume_total_brl,status_llm,nivel_risco,tipologia_suspeita,red_flags,justificativa,tokens_entrada,tokens_saida,latencia_s,custo_estimado_usd
+CLI-014,3,0,3,80629.99,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-023,2,0,2,148535.016,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-028,2,0,2,88750.8,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-013,2,0,2,81730.99,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-005,2,0,2,64742.66,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-026,2,0,2,54729.28,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-001,2,0,2,47947.81,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-029,1,1,0,191385.766,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-017,1,1,0,121391.37,PENDENTE_EXECUCAO_COM_API,,,,,,,,
+CLI-030,1,0,1,117780.886,PENDENTE_EXECUCAO_COM_API,,,,,,,,

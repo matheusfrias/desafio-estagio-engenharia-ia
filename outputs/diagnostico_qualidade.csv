@@ -1,0 +1,3 @@
+arquivo,registros_originais,ids_unicos,duplicatas_exatas_por_id_removiveis,datas_ausentes,clientes,operacoes_usd,taxa_usd_brl
+dados_nivel_1.json,20,19,1,1,6,1,5.4
+dados_nivel_2.json,322,317,5,7,30,7,5.4

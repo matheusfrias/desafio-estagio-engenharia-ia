@@ -1,0 +1,113 @@
+{
+  "nivel_1": {
+    "registros_originais": 20,
+    "registros_apos_deduplicacao": 19,
+    "duplicata_id": "OP-0007",
+    "datas_ausentes": 1,
+    "regra_1": {
+      "cliente": "CLI-A-1",
+      "data": "2026-03-09",
+      "qtd_operacoes": 3,
+      "volume_dia_brl": 54200.0,
+      "maior_operacao_brl": 18800.0
+    },
+    "caso_negativo_regra_1": {
+      "cliente": "CLI-A-2",
+      "data": "2026-03-14",
+      "qtd_operacoes": 2,
+      "volume_dia_brl": 52900.0
+    },
+    "regra_2": {
+      "operacao": "OP-0013",
+      "cliente": "CLI-A-4",
+      "valor_original": 12000,
+      "moeda": "USD",
+      "valor_brl": 64800.0,
+      "mediana_brl": 5450.0,
+      "limite_5x_mediana_brl": 27250.0
+    }
+  },
+  "nivel_2": {
+    "registros_originais": 322,
+    "registros_apos_deduplicacao": 317,
+    "duplicatas_removidas": 5,
+    "datas_ausentes": 7,
+    "clientes": 30,
+    "top10": [
+      {
+        "cliente_id": "CLI-014",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 3,
+        "volume_total_brl": 80629.99,
+        "total_sinalizacoes": 3
+      },
+      {
+        "cliente_id": "CLI-023",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 148535.016,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-028",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 88750.8,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-013",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 81730.99,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-005",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 64742.66,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-026",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 54729.28,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-001",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 2,
+        "volume_total_brl": 47947.81,
+        "total_sinalizacoes": 2
+      },
+      {
+        "cliente_id": "CLI-029",
+        "alertas_fracionamento": 1,
+        "alertas_valor_atipico": 0,
+        "volume_total_brl": 191385.766,
+        "total_sinalizacoes": 1
+      },
+      {
+        "cliente_id": "CLI-017",
+        "alertas_fracionamento": 1,
+        "alertas_valor_atipico": 0,
+        "volume_total_brl": 121391.37,
+        "total_sinalizacoes": 1
+      },
+      {
+        "cliente_id": "CLI-030",
+        "alertas_fracionamento": 0,
+        "alertas_valor_atipico": 1,
+        "volume_total_brl": 117780.886,
+        "total_sinalizacoes": 1
+      }
+    ]
+  },
+  "llm": {
+    "status": "pendente_de_execucao_com_chave_real",
+    "motivo": "Nenhuma chave de API foi fornecida; métricas e pareceres não foram simulados."
+  }
+}
