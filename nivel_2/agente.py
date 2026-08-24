@@ -102,7 +102,7 @@ def planejar(cliente_id: str, fatos: dict) -> tuple[PlanoInvestigacao, dict]:
     from google.genai import types
 
     client = _cliente_genai()
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
+    model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 
     prompt = f"""
 Você é um agente de triagem PLD.
@@ -180,7 +180,7 @@ def redigir_parecer(cliente_id: str, fatos: dict, evidencias: list[dict]) -> tup
     from google.genai import types
 
     client = _cliente_genai()
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
+    model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 
     prompt = f"""
 Atue como analista de Prevenção à Lavagem de Dinheiro.
@@ -264,7 +264,7 @@ def investigar_cliente(linha: pd.Series) -> dict:
 
 
 def main() -> None:
-    OUTPUTS.mkdir(exist_ok=True)
+    OUTPUTS.mkdir(parents=True, exist_ok=True)
     ranking = ranking_sinalizados(10)
     ranking.to_csv(OUTPUTS / "top10_clientes_sinalizados.csv", index=False)
 
