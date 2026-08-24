@@ -1,7 +1,7 @@
 candidato: "Matheus Puzzello Moniz de Frias"
 modelo_usado: "gemini-3.5-flash-lite"
 provedor: "google-ai-studio"
-horas_dedicadas: 4.62
+horas_dedicadas: 5 horas
 
 nivel_1:
   limpeza_dados:
